@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E3F2FD; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #1E88E5; /* Bright blue */
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #1E88E5;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: border-color 0.3s ease; /* Transition for input border */
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for button */
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #B3E5FC; /* Light blue for separation */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for list item */
+}
+
+li:hover {
+    background-color: #BBDEFB; /* Light blue on hover */
+    transform: translateY(-2px); /* Slightly lift item on hover */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #B0BEC5; /* Grey for completed tasks */
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #E53935; /* Red for delete button */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Transition for delete button */
+}
+
+.delete-btn:hover {
+    color: #D32F2F; /* Darker red on hover */
+}
